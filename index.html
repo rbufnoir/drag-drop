@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draggable</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            #draggable {
+                display: flex;
+                user-select: none;
+                border: 1px solid green;
+            }
+
+            ul {
+                padding: 1em;
+                border: 1px solid black;
+                list-style: none;
+                margin: 2em;
+            }
+
+            li {
+                z-index: 10;
+                list-style-type: none;
+                border: 1px solid red;
+                /* width: 100%; */
+                background-color: grey;
+                height: 2em;
+                width: 3em;
+                margin: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="draggable">
+            <ul id="div1" class="item">
+                <li id="0">test0</li>
+                <li id="1">test1</li>
+                <li id="2">test2</li>
+                <li id="3">test3</li>
+            </ul>
+            <ul id="div2" class="item">
+                <li id="4">test4</li>
+                <li id="5">test5</li>
+                <li id="6">test6</li>
+                <li id="7">test7</li>
+            </ul>
+            <ul id="div3" class="item">
+                <li id="8">test8</li>
+                <li id="9">test9</li>
+                <li id="A">testA</li>
+                <li id="B">testB</li>
+            </ul>
+        </section>
+        <button id="colonne">
+            Ajouter une colonne
+        </button>
+        <button id="button">
+            Ajouter un élément de liste
+        </button>
+        <select id="select">
+            <option>
+                Colonne 1
+            </option>
+            <option>
+                Colonne 2
+            </option>
+            <option>
+                Colonne 3
+            </option>
+        </select>
+        <!-- <script src="script.js"></script> -->
+        <script src="script2.js"></script>
+    </body>
+</html>
