@@ -70,3 +70,23 @@ document.getElementById('button').addEventListener('click', () => {
 
     document.getElementById('draggable').children[option - 1].appendChild(newLi);
 });
+
+document.getElementById('colonne').addEventListener('click', () => {
+    let newUl = document.createElement('ul');
+    let id = document.getElementsByTagName('ul').length + 1;
+    newUl.setAttribute('id', 'div'+id);
+    newUl.setAttribute('class', 'item');
+
+    let newLi = document.createElement('li');
+    let idLi = Math.floor(Math.random() * 50 + 10);
+    newLi.setAttribute('id', idLi);
+    newLi.innerText = idLi;
+    newUl.appendChild(newLi);
+
+
+    document.getElementById('draggable').appendChild(newUl);
+
+    let option = document.createElement('option');
+    option.innerHTML = ' Colonne ' + id + ' ';
+    document.getElementById('select').appendChild(option);
+});
