@@ -87,7 +87,7 @@ const mouseMouveHandler = function (e) {
 		console.log("prev", dragElem)
 		prevParent.appendChild(placeholder)
 		prevParent.appendChild(dragElem);
-		console.log("Je suis au dessus de mon parent precendent");
+		console.log("Je suis au dessus de mon parent precedent");
 	}
 
 	if (nextParent && isAboveParent(dragElem, nextParent)){
